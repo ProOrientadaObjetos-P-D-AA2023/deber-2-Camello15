@@ -29,4 +29,19 @@ print(persona2)
 
 # Presentar objeto; usar el método __st__
 
+class Mascota:
+    def __init__(self, nombre, tipo, edad):
+        self.nombre = nombre
+        self.tipo = tipo
+        self.edad = edad
 
+    def __str__(self):
+        return f"Nombre: {self.nombre}, Tipo: {self.tipo}, Edad: {self.edad}"
+
+nombre = input("Ingrese el nombre de la mascota: ")
+tipo = input("Ingrese el tipo de mascota: ")
+edad = int(input("Ingrese la edad de la mascota: "))
+
+mascota = Mascota(nombre, tipo, edad)
+
+print(mascota)
