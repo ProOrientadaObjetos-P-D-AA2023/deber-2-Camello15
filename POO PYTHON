@@ -1,0 +1,116 @@
+Nombre: Camilo Velepucha
+Programacion Orientada a Objetos Python
+
+
+Clases: en Python, las clases se definen mediante la palabra clave "class", seguida del nombre de la clase y los dos puntos (:). La definición de la clase suele incluir métodos y atributos. Por ejemplo: 
+class Persona:
+  pass
+  
+Atributos: los atributos son variables que contienen información relacionada con la clase. Se pueden agregar atributos a una clase utilizando el método constructor init() y la notación de punto (.) para acceder a ellos. Por ejemplo: 
+class Persona:
+  def __init__(self, nombre, edad):
+    self.nombre = nombre
+    self.edad = edad
+
+p1 = Persona("Juan", 25)
+print(p1.nombre)
+print(p1.edad)
+
+Métodos: los métodos son funciones que se definen dentro de una clase y que pueden ser llamadas en cualquier instancia de la clase. Se definen como cualquier otra función, pero incluyen el parámetro self, que se refiere al objeto actual de la clase. Por ejemplo:
+class Persona:
+  def __init__(self, nombre, edad):
+    self.nombre = nombre
+    self.edad = edad
+
+  def saludar(self):
+    print("Hola, mi nombre es", self.nombre, "y tengo", self.edad, "años.")
+
+p1 = Persona("Juan", 25)
+p1.saludar()
+
+Constructores: el constructor es un método especial que se utiliza para inicializar los atributos de una clase. En Python, el constructor se llama init() y toma como primer parámetro self (el objeto actual) y cualquier otro parámetro que se quiera incluir. Por ejemplo:
+class Persona:
+  def __init__(self, nombre, edad):
+    self.nombre = nombre
+    self.edad = edad
+
+p1 = Persona("Juan", 25)
+print(p1.nombre)
+print(p1.edad)
+
+toString(): en Python, el método toString() se llama str() y se utiliza para imprimir una representación en cadena de la clase. Este método se llama automáticamente cuando se imprime una instancia de la clase. Por ejemplo:
+class Persona:
+  def __init__(self, nombre, edad):
+    self.nombre = nombre
+    self.edad = edad
+
+  def __str__(self):
+    return "Mi nombre es " + self.nombre + " y tengo " + str(self.edad) + " años."
+
+p1 = Persona("Juan", 25)
+print(p1)
+
+Niveles de acceso: en Python, no hay palabras clave para definir los niveles de acceso a los atributos y métodos de una clase. Sin embargo, se utiliza una convención de nomenclatura para indicar que un atributo o método es privado o protegido. Por ejemplo, los atributos o métodos que comienzan con un guión bajo (_) se consideran protegidos, mientras que los que comienzan con dos guiones bajos (__) se consideran privados. Por ejemplo:
+class Persona:
+  def __init__(self, nombre, edad):
+    self._nombre = nombre
+    self.__edad = edad
+
+  def __str__(self):
+    return "Mi nombre es " + self._nombre + " y tengo " + str(self.__edad) + " años."
+
+p1 =
+
+Crear la clase: la primera etapa es crear la clase utilizando la palabra clave "class" y luego darle un nombre a la clase. Por ejemplo, la siguiente clase define una persona con un nombre y una edad:
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+Instanciar la clase: para crear un objeto de la clase Persona, utilizamos la siguiente sintaxis:
+p1 = Persona("Juan", 25)
+En este caso, "p1" es una instancia de la clase Persona. Hemos creado un objeto llamado "p1" que contiene el nombre "Juan" y la edad "25".
+
+Acceder a los atributos del objeto: podemos acceder a los atributos del objeto utilizando la notación de punto (.):
+print(p1.nombre)
+print(p1.edad)
+
+Invocar métodos de la clase: podemos invocar los métodos de la clase utilizando la notación de punto (.) también. Por ejemplo, si tenemos un método llamado "saludar" en nuestra clase Persona:
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+    
+    def saludar(self):
+        print("Hola, mi nombre es", self.nombre, "y tengo", self.edad, "años.")
+
+p1 = Persona("Juan", 25)
+p1.saludar()
+
+La salida será: "Hola, mi nombre es Juan y tengo 25 años."
+
+Ejecutar la clase: para ejecutar la clase, simplemente debemos llamar al script que contiene la definición de la clase. Por ejemplo, si nuestra clase se define en un archivo llamado "persona.py", podemos ejecutar la clase con el siguiente código:
+
+from persona import Persona
+
+p1 = Persona("Juan", 25)
+p1.saludar()
+
+Esto importa la clase Persona desde el archivo persona.py, crea una instancia de la clase y llama al método saludar().
+
+POO EN JAVA Y PYTHON
+Semejanzas: 
+JAVA.- Ambos son lenguajes de programación orientados a objetos que utilizan clases, métodos, herencia y polimorfismo.
+PYTHON.- Ambos utilizan clases, métodos, herencia y polimorfismo para la programación orientada a objetos.
+
+DIFERENCIAS:
+JAVA.-Java es un lenguaje estáticamente tipado, lo que significa que los tipos de datos se declaran en tiempo de compilación. Python es un lenguaje dinámicamente tipado, lo que significa que los tipos de datos se resuelven en tiempo de ejecución.
+PYTHON.-Python es un lenguaje más fácil de aprender y escribir, ya que utiliza menos código para realizar las mismas tareas que Java. Además, Python tiene una sintaxis más limpia y sencilla, lo que la hace más fácil de leer.
+
+VENTAJAS:
+JAVA.-Java tiene una gran cantidad de bibliotecas y frameworks que facilitan el desarrollo de software a gran escala. Además, es un lenguaje muy popular y utilizado en la industria.
+PYTHON.-Python tiene una curva de aprendizaje más fácil y es más flexible en cuanto a la escritura de código, lo que permite a los programadores enfocarse más en la lógica del programa que en la sintaxis. Además, es ideal para la programación de scripts y tareas de automatización de menor escala.
+
+DESVENTAJAS:
+JAVA.-Java puede ser más verboso y requiere más código para realizar tareas simples. Además, la sintaxis puede ser más complicada y difícil de entender para los principiantes.
+PYTHON.-Python puede ser más lento que Java en la ejecución de programas y requiere más recursos de hardware. Además, la falta de tipos de datos declarados en tiempo de compilación puede llevar a errores en tiempo de ejecución.
